@@ -2,22 +2,188 @@
 layout: default
 ---
 
-<div class="home">
+<section id="intro" data-image-src="/assets/img/intro.jpg">
+	<h1><span>Moxi9</span></h1>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section id="product-development" class="white">
+	<div class="container">
+		<h1>Product development is our passion</h1>
+		<h2>Working with clients since 2005 across different platforms and industries.</h2>
+	</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<article class="brand with-bg" data-image-src="//beta.phpfox.com/assets/img/members-profile-social-network-website-with-phpfox-script.jpg">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+		<div class="overlay-bg"></div>
+		<div class="container phpfox">
+			<h1 data-sr="enter after 0.30s">Our flagship</h1>
+			<div data-sr="enter after 0.60s">
+				<h2>
+					PHPfox is a Social Network Script that is both Desktop &amp; Mobile friendly.
+					Giving you the opportunity to run a modern and easy-to-use Social Website.
+				</h2>
+				<h2>
+					We developed the product from the ground up using PHP.
+				</h2>
+				<a href="http://phpfox.com/" class="btn btn-default link" target="_blank">View Website</a>
+			</div>
+		</div>
+	</article>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section id="webshops">
+	<article>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<h1 data-sr="enter after 0.20s">Webshops</h1>
+					<h2 data-sr="enter after 0.40s">
+						Our flagship product required specific features in order to distribute it to our clients,
+						this taught us first hand what is required of a software distribution webshop.
+					</h2>
+					<h2 data-sr="enter after 0.40s">
+						We expanded our horizon by working with clients that needed custom webshops to sell
+						their products online. We include services to take product shots of merchandise so
+						our clients can focus their time and energy on other factors of their growing venture.
+					</h2>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1 text-center" data-sr="enter after 0.59s">
+					<div class="tags">
+						<div>Platforms/Services We Have Worked With</div>
+						<span>Shopify</span>
+						<span>WooCommerce</span>
+						<span>Magento</span>
+						<span>Custom Software Distribution</span>
+						<span>Custom Online Clothing Retail</span>
+					</div>
 
-</div>
+					<div class="tags">
+						<div>Payment Gateway Integrations</div>
+						<span>Braintree</span>
+						<span>Stripe</span>
+						<span>Klarna</span>
+						<span>2checkout</span>
+						<span>PayPal: Express Checkout</span>
+						<span>PayPal: Adaptive Payments</span>
+						<span>PayPal: Mass Pay</span>
+						<span>PayPal: Recurring Payments</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+</section>
+
+<section data-image-src="/assets/img/webshop.png">
+	<div class="overlay-bg"></div>
+</section>
+
+<section id="skills">
+	<article class="brand">
+		<div class="container">
+			<div class="text-center">
+				<h1 data-sr="enter after 0.30s">Our Strengths</h1>
+				<div data-sr="enter after 0.60s">
+					<h2>
+						We've been working with web development since 2004.
+						We enjoy learning new techniques to achieve our goals, especially
+						when it comes to server-side platforms and data storage.
+					</h2>
+					<h2>
+						Working with cloud services is where we spend most of our time lately with clients.
+						We focus on integrating such services to look and feel like its part of our clients website.
+					</h2>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="brand-light">
+		<div class="text-center tags-inline">
+			<div class="tags">
+				<div>Server-Side Platforms</div>
+				<span>PHP</span>
+				<span>Node.js</span>
+			</div>
+
+			<div class="tags">
+				<div>Data Storage &amp; Structure</div>
+				<span>MySQL</span>
+				<span>Redis</span>
+				<span>MongoDB</span>
+			</div>
+
+			<div class="tags">
+				<div>Products</div>
+				<span>PHPfox</span>
+				<span>Wordpress</span>
+				<span>WooCommerce for Wordpress</span>
+				<span>Magento</span>
+				<span>vBulletin 4</span>
+				<span>phpBB</span>
+			</div>
+
+			<div class="tags">
+				<div>Services</div>
+				<span>Amazon Web Services</span>
+				<span>Rackspace</span>
+				<span>Shopify</span>
+				<span>Zendesk</span>
+				<span>Kayako</span>
+				<span>Github Pages</span>
+			</div>
+
+			<div class="tags">
+				<div>Tools of Choice</div>
+				<span>FontAwesome</span>
+				<span>Twitter Bootstrap</span>
+				<span>Github</span>
+				<span>PHPStorm</span>
+				<span>Less</span>
+				<span>jQuery</span>
+			</div>
+		</div>
+	</article>
+</section>
+
+<section id="connect">
+	<div class="container">
+		<h1>Stay Connected</h1>
+		<div class="text-center social">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-github"></i></a>
+		</div>
+	</div>
+
+	<article class="light email">
+		<div class="alert alert-success text-center hide">
+			Thanks for getting in touch with us!
+		</div>
+
+		<div class="container">
+			<div class="text-center">
+				<form method="post" action="#">
+					<div class="form-group">
+						<input type="email" placeholder="What's your email?" class="form-control" name="email">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Got a name?" class="form-control" name="subject">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" name="text" placeholder="What can we help you with?"></textarea>
+					</div>
+
+					<div class="defer-script" data-src="https://www.google.com/recaptcha/api.js"></div>
+
+					<i class="fa fa-circle-o-notch fa-spin"></i>
+
+					<div class="form-group hide">
+						<input type="submit" class="btn btn-default" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</article>
+
+</section>

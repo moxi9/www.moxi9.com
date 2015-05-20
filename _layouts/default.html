@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<meta http-equiv="pragma" content="no-cache">
 
-  {% include head.html %}
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/css/v1.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--
+		<header>
+			<img src="/assets/img/logo.png">
+		</header>
+		-->
 
-  <body>
+		<div id="menu">
+			<nav>
+				<div class="current"><a href="/#intro" class="logo"><span>Moxi9</span></a></div>
+				<div><a href="/#product-development">Product Development</a></div>
+				<div><a href="/#webshops">Webshop Management</a></div>
+				<div><a href="/#skills">Development Skills</a></div>
+				<div><a href="/#connect">Connect</a></div>
+			</nav>
+		</div>
+		<div id="content" class="container-fluid">
+            {{ content }}
+		</div>
 
-    {% include header.html %}
+		<footer>
+			&copy; Moxi9
+		</footer>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="/assets/js/scrollReveal.min.js"></script>
+		<script src="/assets/js/jquery.visible.min.js"></script>
+		<script>
+			window.sr = new scrollReveal();
+		</script>
 
-    {% include footer.html %}
-
-  </body>
-
+		<script src="/assets/js/main.js"></script>
+	</body>
 </html>
