@@ -284,9 +284,11 @@ header {
   font-size: 30px;
   font-weight: 200;
   transform: rotate(45deg);
+  animation-duration: 0.1s;
 }
 #intro h1 span {
   transform: rotate(-45deg);
+  animation-duration: 0.1s;
   display: block;
 }
 #product-development {
