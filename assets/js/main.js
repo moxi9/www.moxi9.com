@@ -62,7 +62,7 @@ $(document).ready(function() {
 		// window.open('mailto:hello@moxi9.com?subject=subject&body=body');
 
 		$.ajax({
-			url: 'http://localhost/moxi9/moxi9.com/send',
+			url: 'http://store.phpfox.com/send',
 			type: 'POST',
 			data: $(this).serialize(),
 			success: function(e) {
